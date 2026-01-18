@@ -1,0 +1,143 @@
+html {
+	overflow-y: scroll;
+}
+
+body {
+	background-image: url("/assets/img/stars.gif");
+	background-color: #0f0f0f;
+	color: #000000;
+	font-family: "Courier New", monospace;
+	margin: 0;
+	padding: 0;
+}
+
+table.main {
+	margin: 50px auto;
+	border: 5px inset #cfcfcf;
+	width: 650px;
+	border-collapse: collapse;
+}
+
+div.construction {
+	text-align: center;
+	margin: 50px auto;
+	width: 650px;
+}
+
+.gifconstruction {
+	display: block;
+	width: 50%;
+	margin: 0 auto;
+}
+
+td.top {
+	background-color: #000000;
+	padding: 10px;
+	color: #ffffff;
+}
+
+li {
+	margin-bottom: 20px;
+}
+
+h1 {
+	color: #ff0000;
+	font-size: 18px;
+	margin: 5px 0;
+}
+
+h2 {
+	font-size: 23px;
+	margin: 5px 0;
+}
+
+a {
+	color: #0000ee;
+	text-decoration: none;
+}
+
+a.blink {
+	color: #ff0000;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.blink {
+	color: #ff0000;
+	font-weight: bold;
+	animation: blinker 1s step-start infinite;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+@keyframes blinker {
+	50% {
+		opacity: 0;
+	}
+}
+
+marquee {
+	background-color: #1b2452;
+	color: #d4af37;
+	font-weight: bold;
+}
+
+.logo {
+	display: block;
+	margin: 0;
+	width: 100%;
+}
+
+p,
+ul {
+	text-align: left;
+	margin-left: 0;
+}
+
+hr {
+	border: 1px dashed #000000;
+	width: 90%;
+	margin: 10px auto;
+}
+
+td.sidebar {
+	width: 150px;
+	background-color: #afafaf;
+	padding-left: 15px;
+	vertical-align: top;
+}
+
+td.content {
+	padding-left: 15px;
+	background-color: #cfcfcf;
+	vertical-align: top;
+}
+
+td.footer {
+	padding-left: 15px;
+	background-color: #afafaf;
+}
+
+.gif {
+	width: 25%;
+	margin: 10px;
+}
+
+.longgif {
+	width: 90%;
+	margin: 10px;
+}
+
+.photo {
+	width: 90%;
+	margin: 10px;
+}
+
+.code {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 14px;
+	margin: 10px 20px;
+}
