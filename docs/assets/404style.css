@@ -1,0 +1,116 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	text-size-adjust: none;
+}
+
+@font-face {
+	font-family: "Tinos";
+	src: url("/assets/tinos.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Cutive";
+	src: url("/assets/cutive.ttf") format("truetype");
+}
+
+body {
+	background-color: #ffffff;
+	color: #000000;
+	overflow-wrap: anywhere;
+	font-family: "Tinos";
+	letter-spacing: -0.7px;
+	line-height: 1.1;
+	font-size: 16px;
+}
+
+p {
+	margin: 15px 0;
+}
+
+a {
+	color: #0000cc;
+	text-decoration: underline;
+}
+
+a:hover {
+	color: #ff0000;
+}
+
+h1 {
+	font-size: 36px;
+}
+
+hr {
+	border: none;
+	border-top: 1px solid #000000;
+	margin: 20px 0;
+}
+
+.page {
+	width: 650px;
+	margin: 80px auto;
+	padding: 0 20px;
+}
+
+.code {
+	font-family: "Cutive";
+	font-size: 14px;
+	margin: 20px 0;
+}
+
+.small {
+	font-family: "Cutive";
+	font-size: 12px;
+}
+
+html::-webkit-scrollbar {
+	width: 16px;
+	height: 16px;
+}
+
+html::-webkit-scrollbar-track {
+	background: url("/assets/img/scroll/background.png");
+	image-rendering: pixelated;
+}
+
+html::-webkit-scrollbar-thumb {
+	box-shadow:
+		inset -1px -1px #000000,
+		inset 1px 1px #dfdfdf,
+		inset -2px -2px #808080,
+		inset 2px 2px #ffffff;
+	background: #c0c0c0;
+}
+
+html::-webkit-scrollbar-button:vertical:decrement {
+	height: 16px;
+	width: 16px;
+	background-image: url("/assets/img/scroll/up.png");
+	image-rendering: pixelated;
+}
+
+html::-webkit-scrollbar-button:vertical:increment {
+	height: 16px;
+	width: 16px;
+	background-image: url("/assets/img/scroll/down.png");
+	image-rendering: pixelated;
+}
+
+html::-webkit-scrollbar-button:horizontal:decrement {
+	height: 16px;
+	width: 16px;
+	background-image: url("/assets/img/scroll/left.png");
+	image-rendering: pixelated;
+}
+
+html::-webkit-scrollbar-button:horizontal:increment {
+	height: 16px;
+	width: 16px;
+	background-image: url("/assets/img/scroll/right.png");
+	image-rendering: pixelated;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>404 - File Not Found</title>
+		<link rel="icon" type="image/x-icon" href="/favicon.ico">
+		<link rel="stylesheet" type="text/css" href="/assets/404style.css">
+	</head>
+	<body>
+		<div class="page">
+			<h1>404 - File Not Found</h1>
+			<hr>
+			<p>
+				The requested URL was not found on this server.
+			</p>
+			<div class="code">
+				HTTP/1.0 404 Not Found<br>
+				Server: Apache/1.2.1 (Unix)<br>
+				<br>
+				The file may have been removed, renamed,
+				or is temporarily unavailable.
+			</div>
+			<p>
+				Please check the URL for errors.
+			</p>
+			<a href="/">Return home</a>
+			<p class="small" id="funny-line">
+				Loading system status...
+			</p>
+			<script>
+				const options = [
+					"The server sighed.<br>Nothing else happened.",
+					"The server says no.<br>It did not provide a reason.",
+					"The server says it is 'functioning'.<br>We disagree.",
+					"The server refuses to elaborate further.<br>It has left.",
+					"The server found a bug.<br>It decided to keep it as a pet.",
+					"The server wandered off.<br>We're following the Ethernet cable.",
+					"The server blinked.<br>Your page took the opportunity to escape.",
+					"The server says this isn't its fault.<br>That's what it always says.",
+					"The server claims everything is under control.<br>We have our doubts.",
+					"The server acknowledges your request.<br>It also chooses to ignore it.",
+					"The server went for a coffee refill.<br>It forgot the page on the counter.",
+					"The server says the page is 'technically somewhere'.<br>That’s all we got.",
+					"The server is pretending to be offline.<br>We can literally hear it humming.",
+					"The server took a coffee break five minutes ago.<br>We haven't seen it since.",
+					"The server was about to fetch your page.<br>Then something shiny distracted it.",
+					"The server is currently powered by hope and duct tape.<br>One of them is failing.",
+					"The server wandered off for a snack.<br>We're trying to lure it back with cookies.",
+					"The server says it was just about to fetch your page.<br>We've heard that one before.",
+					"The server is refusing to cooperate.<br>We are currently threatening it with a hammer.",
+					"The server is currently curled up next to the router.<br>We're letting it have this one.",
+					"The server is pretending this page doesn't exist.<br>We're having a serious talk with it.",
+					"The server is doing the bare minimum today.<br>Finding this page was simply asking too much.",
+					"The server is currently lying on the floor of the datacenter.<br>It is not taking questions.",
+					"The server saw your request and literally rolled its eyes.<br>It is currently ignoring all of us.",
+					"The bits and bytes are striking for better working conditions.<br>Negotiations are still ongoing.",
+					"The server considers this page 'low-priority at best'.<br>It has moved on to more important tasks.",
+					"The server has labeled this page 'strategically irrelevant'.<br>We are not sure what that means either.",
+					"The stylesheet is refusing to cooperate with the HTML today.<br>They are currently not on speaking terms.",
+					"The server has deprioritized this page in favor of 'literally anything else'.<br>We respect its decision.",
+					"The server decided to take a nap instead of fetching this page.<br>We are poking it with a stick right now.",
+					"The server says finding this page is 'not in its job description'.<br>We are scheduling a performance review.",
+				];
+				const randomIndex = Math.floor(Math.random() * options.length);
+				document.getElementById("funny-line").innerHTML = options[randomIndex];
+			</script>
+		</div>
+	</body>
+</html>
